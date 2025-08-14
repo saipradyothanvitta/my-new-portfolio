@@ -7,7 +7,7 @@ const portfolioData = {
   name: "Sai Pradyothan Vitta",
   githubUsername: "saipradyothanvitta",
   profileImage: "https://avatars.githubusercontent.com/u/189428240?s=400&u=be0ac2681cbab30ae52a8efc3e8e00c357099c8f&v=4",
-  resumeUrl: "https://drive.google.com/file/d/1c1xeslSz8eGbEvxITpfQSlspsrwP_7Zv/view?usp=sharing", // <-- ADD YOUR RESUME LINK HERE
+  resumeUrl: "https://drive.google.com/file/d/1c1xeslSz8eGbEvxITpfQSlspsrwP_7Zv/view?usp=sharing",
   socialLinks: {
     github: "https://github.com/saipradyothanvitta",
     linkedin: "https://www.linkedin.com/in/sai-pradyothan-vitta-2359b9253/",
@@ -29,21 +29,21 @@ const portfolioData = {
       degree: "UG In Computer Science",
       institution: "Bennett University (B.Tech)/BU",
       dates: "2022-2026 | Pursuing",
-      imageUrl: "https://www.reviewadda.com/assets/uploads/college/logo/logo1.png" // Replace with your university image URL
+      imageUrl: "https://www.reviewadda.com/assets/uploads/college/logo/logo1.png"
     }
   ],
   projects: [
     {
       id: 1,
       name: "Crazy-Chat",
-      description: " Developed a full-stack, real-time chat application using the MERN stack (React, Node.js, Express) and Socket.IO to implement features like live messaging, typing indicators, and online user counts.",
+      description: "Developed a full-stack, real-time chat application using the MERN stack (React, Node.js, Express) and Socket.IO to implement features like live messaging, typing indicators, and online user counts.",
       tags: ["React", "Node.js", "JavaScript", "React.js", "Socket.IO", "Express.js"],
       githubUrl: "https://github.com/saipradyothanvitta/crazy-chat-app",
       demoUrl: "https://crazy-chat.netlify.app/"
     },
     {
       id: 2,
-      name: "Image-Captioning-Model-Vision-Transformers-GPT-2-",
+      name: "Image-Captioning-Model",
       description: "Developed VisionGPT2, a hybrid image-captioning system that integrates a transformer-based Vision Transformer (ViT) encoder with GPT‑2 for language generation, enabling coherent, context-aware image descriptions.",
       tags: ["Python", "Pandas", "NumPy", "PyTorch"],
       githubUrl: "https://github.com/saipradyothanvitta/Image-Captioning-Model-Vision-Transformers-GPT-2-",
@@ -266,7 +266,7 @@ const PortfolioMain = () => {
   };
   
   return (
-    <div className="bg-gray-950 text-gray-200 min-h-screen font-sans">
+    <div className="bg-gray-950 text-gray-200 min-h-screen font-sans isolate">
       <div className="futuristic-background"></div>
       
       <header className="fixed top-0 left-0 right-0 z-50 bg-gray-950 bg-opacity-90 backdrop-blur-md shadow-lg transition-all duration-300">
@@ -308,7 +308,7 @@ const PortfolioMain = () => {
         )}
       </header>
       
-      <main className="pt-24">
+      <main className="pt-24 relative z-10">
         <section id="hero" className="container mx-auto px-4 sm:px-6 py-24 md:py-32 flex flex-col items-center justify-center min-h-screen text-center">
           <div className="max-w-4xl text-white">
             <p className="text-xl md:text-2xl lg:text-3xl font-light text-gray-400 mb-4 animate-fade-in-up">Hello, I'm</p>
@@ -429,6 +429,9 @@ const App = () => {
         --glow-color-1: rgba(239, 68, 68, 0.1);
         --glow-color-2: rgba(6, 182, 212, 0.1);
       }
+      button, a {
+        touch-action: manipulation;
+      }
       .text-primary-color { color: var(--primary-color); }
       .text-secondary-color { color: var(--secondary-color); }
       .bg-primary-color { background-color: var(--primary-color); }
@@ -451,7 +454,9 @@ const App = () => {
       .bg-gradient-to-r.from-primary-color.to-secondary-color { background-size: 200% auto; transition: background-position 0.5s ease; }
       .futuristic-background {
         position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-        background: #0a0a0a; z-index: -1; overflow: hidden;
+        background: #0a0a0a;
+        z-index: -10;
+        overflow: hidden;
         background-image:
           repeating-conic-gradient(from 0deg at 50% 50%, var(--glow-color-1) 0%, transparent 1%, transparent 10%, var(--glow-color-2) 11%, transparent 12%, transparent 20%),
           radial-gradient(ellipse at center, rgba(0, 0, 0, 0.8) 0%, transparent 70%);
