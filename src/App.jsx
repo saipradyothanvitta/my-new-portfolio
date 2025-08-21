@@ -7,7 +7,7 @@ const portfolioData = {
   name: "Sai Pradyothan Vitta",
   githubUsername: "saipradyothanvitta",
   profileImage: "https://avatars.githubusercontent.com/u/189428240?s=400&u=be0ac2681cbab30ae52a8efc3e8e00c357099c8f&v=4",
-  resumeUrl: "https://drive.google.com/file/d/1c1xeslSz8eGbEvxITpfQSlspsrwP_7Zv/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/10yY3gOwA0wp1cQxSGe544yEglp8Korcj/view?usp=sharing",
   socialLinks: {
     github: "https://github.com/saipradyothanvitta",
     linkedin: "https://www.linkedin.com/in/sai-pradyothan-vitta-2359b9253/",
